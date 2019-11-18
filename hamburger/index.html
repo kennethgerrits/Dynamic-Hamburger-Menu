@@ -1,0 +1,88 @@
+﻿<!--
+Author: Kenneth Gerrits - github.com/kennethgerrits
+Date: 12-08-2019
+Version: 1.1
+Description: responsive navigation bar
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- script files (JS / JQUERY)  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="my_script.js"></script>
+
+    <!-- css files -->
+    <link href="all.css" rel="stylesheet">
+    <link href="mobile.css" media="screen and (min-width:320px)  and (max-width:1023px)" rel="stylesheet">
+    <link href="desktop.css" media="screen and (min-width:1024px)" rel="stylesheet">
+
+    <title>Dynamic navigation bar</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigationMenu">
+
+            <figure id="hamburgerClosed">
+                <img src="hamburgerClosed.png" alt="hamburgerMenuClosed">
+            </figure>
+
+            <figure id="hamburgerOpen">
+                <img src="hamburgerOpen.png" alt="hamburgerMenuOpen">
+            </figure>
+
+            <ol id="menuItem">
+
+                <a href="#">
+                    <li id="highlightedMenu">
+                        Menu-Item-1
+                        <ul class="sub-menu">
+                            <a href="#">
+                                <li class="defaultLineHeight">Insert-sub menu item 1 here</li>
+                            </a>
+                            <a href="#">
+                                <li class="defaultLineHeight">Insert-sub menu item 2 here</li>
+                            </a>
+                        </ul>
+                    </li>
+                </a>
+                
+                <a href="#">
+                    <li>
+                        Menu-Item-2
+                        <ul class="sub-menu">
+                            <a href="#">
+                                <li class="defaultLineHeight">Insert-sub menu item 1 here</li>
+                            </a>
+                            <a href="#">
+                                <li class="defaultLineHeight">Insert-sub menu item 2 here</li>
+                            </a>
+                        </ul>
+                    </li>
+                </a>
+                
+                <a href="#">
+                    <li>
+                        Menu-Item-3
+                        <ul class="sub-menu">
+                            <a href="#">
+                                <li class="defaultLineHeight">Insert-sub menu item 1 here</li>
+                            </a>
+                            <a href="#">
+                                <li class="defaultLineHeight">Insert-sub menu item 2 here</li>
+                            </a>
+                        </ul>
+                    </li>
+                </a>
+  
+                <!--Menu-Item 4,5,6 etc...-->
+            </ol>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,33 @@
+#hamburgerOpen {
+    display: none;
+}
+
+header {
+    width: 100vw;
+    background: rgb(7, 7, 69);
+    padding: 1vh;
+}
+
+.navigationMenu img {
+    width: 6vmax;
+}
+
+#menuItem {
+    position: relative;
+    display: none;
+    color: white;
+    /* text-align: center; */
+}
+
+#menuItem li {
+    padding: 2vh;
+    font-size: 3vmax;
+}
+
+.sub-menu li{
+    position: relative;
+    left: 30px;
+}
+
+
+
